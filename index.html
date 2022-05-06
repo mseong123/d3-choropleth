@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D3-Choropleth</title>
+        <meta name="description" content="D3-Choropleth">
+        <meta name="author" content="Mseong">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="stylesheet/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">United States Educational Attainment</h1>
+            <h3 id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</h3>
+            <svg id="svg-legend" width="100%" height="60"></svg>
+            <svg id="svg" viewBox="0 0 1020 620"></svg><!--units used by GeoJSON (960 width 600 height) + margins (10 top,down,30 left,right)-->
+        </div>
+        <div id="tooltip"></div>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>
